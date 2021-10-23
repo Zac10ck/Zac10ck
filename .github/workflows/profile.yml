@@ -17,3 +17,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
+        run: |
+          git config user.name Zac10ck
+          git config user.email iamabinabraham@gmail.com
+          git add -A .
+          git commit -m "Updated the Profile"
+          git push
