@@ -23,4 +23,3 @@ jobs:
           git config user.email iamabinabraham@gmail.com
           git add -A .
           git commit -m "Updated the Profile"
-          git push
