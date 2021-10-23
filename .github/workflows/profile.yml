@@ -2,7 +2,7 @@ name: GitHub-Profile-Summary-Cards
 
 on:
   schedule: # execute every minute
-    - cron: "*/1 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 jobs:
