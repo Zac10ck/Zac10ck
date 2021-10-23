@@ -11,15 +11,14 @@ jobs:
     name: generate
 
     steps:
+      - name: Commit & Push
+        run: |
+          git config user.name Zac10ck
+          git config user.email iamabinabraham@gmail.com
       - uses: actions/checkout@v2
       - uses: ervitis/github-profile-summary-cards@release
         env: # default use ${{ secrets.GITHUB_TOKEN }}, you can change to your personal access token
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
-      - name: Commit & Push
-        run: |
-          git config user.name Zac10ck
-          git config user.email iamabinabraham@gmail.com
-          git add -A .
-          git commit -m "Updated the Profile"
+
